@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML_Ejemplo_de_Formulario</title>
+</head>
+<body>
+ <h3>Ejemplo de Formulario</h3>   
+ <form action="/script.php" method="get" target="_blank" name="Mi_formulario">
+ <fieldset form="Mi_formulario" id="personales">
+ <legend>Datos Personales:</legend>
+ <label for="Elnombre">Nombre:</label>
+ <input type="text" id="Elnombre" name="Elnombre"><br><br>
+ <label for="LosApellidos">Apellidos:</label>
+ <input type="text" id="LosApellidos" name="LosApellidos"><br><br>
+ <label for="Nacimiento">Fecha de Nacimiento:</label>
+ <input type="date" id="Nacimiento" name="Nacimiento">
+ <label for="sexo">Sexo:</label>
+ <select name="sexo" id="sexo">
+     <option value="hombre">Hombre</option>
+     <option value="mujer">Mujer</option>
+ </select><br><br>
+ <textarea name="masinfo" id="masinfo" cols="50" rows="2">Escriba aquí observaciones.... </textarea><br>
+<button type="submit" form="Mi_formulario" value="enviar">Enviar</button>
+</fieldset>
+<fieldset form="Mi_formulario" id="laborales">
+    <legend>Datos laborales:</legend>
+    <label for="profesion">Profesión:</label>
+    <input type="text" id="profesion" name="profesion">
+    <p>Años de experiencia:</p>
+    <label for="1">1 año</label>
+    <input type="radio" name="experiencia" id="1" value="1"><br>
+    <label for="2">2 años</label>
+    <input type="radio" name="experiencia" id="2" value="2"><br>
+    <label for="other">3 o más años</label>
+    <input type="radio" name="experiencia" id="3" value="3"><br><br>
+    <button type="submit" form="Mi_formulario" value="enviar">Enviar</button>
+</fieldset>
+</form>
+</body>
+</html>
